@@ -26,11 +26,15 @@ export const User = sequelize.define('user', {
     },
     curp: {
         type: DataTypes.STRING,
-        unique: true
+        allowNull: false
     },
     cedula: { 
         type: DataTypes.STRING,
-        unique: true
+        allowNull: false
+    },
+    privilegios: {
+        type: DataTypes.STRING,
+        allowNull: false
     },
     estado: {
         type: DataTypes.BOOLEAN,

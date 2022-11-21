@@ -31,11 +31,15 @@ exports.User = connection_1.default.define('user', {
     },
     curp: {
         type: sequelize_1.DataTypes.STRING,
-        unique: true
+        allowNull: false
     },
     cedula: {
         type: sequelize_1.DataTypes.STRING,
-        unique: true
+        allowNull: false
+    },
+    privilegios: {
+        type: sequelize_1.DataTypes.STRING,
+        allowNull: false
     },
     estado: {
         type: sequelize_1.DataTypes.BOOLEAN,
